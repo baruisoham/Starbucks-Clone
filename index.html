@@ -115,6 +115,38 @@
                 opacity: 1;
             }
         }
+
+        #sign{
+            margin: 23px 15px; background-color: white; color: black; font-weight: bold; font-size: medium; border: 2px solid; border-radius: 20px;
+        }
+        #sign:hover{
+            background-color: lightgray;
+        }
+
+        #join{
+            margin: 23px 15px; background-color: black; color: white; font-weight: bold; font-size: medium; border-radius: 20px;
+        }
+        #join:hover{
+            background-color: rgb(53, 53, 53);
+        }
+        #join1{
+            margin: 23px 15px; background-color: #008248; color: #f1f8f6; font-weight: bold; font-size: medium; border-radius: 20px; border:0px; padding: 3%
+        }
+        #join1:hover{
+            background-color: #029452;
+        }
+        .locate{}
+        #locate:hover{
+            color:#008248;
+        }
+        .link{
+            text-decoration: none; color: black;
+
+        }
+        .link:hover{
+            color:green;
+        }
+
     </style>
 </head>
 
@@ -122,17 +154,17 @@
     <div class="navbar" style="display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; margin-left: 8%; margin-right:8%;">
         <div style="display: flex; justify-content: space-between;">
             <img src="/starbucks-coffee4647.jpg" alt="" height="75px" width="100px">
-            <div style="margin: 23px 15px;">MENU</div>
-            <div style="margin: 23px 15px; border-bottom: 4px solid #008248;">REWARDS</div>
-            <div style="margin: 23px 15px;">GIFT CARDS</div>
+            <div style="margin: 23px 15px;"><a href="#" class="link">MENU</a></div>
+            <div style="margin: 23px 15px; border-bottom: 4px solid #008248;"><a href="#" class="link">REWARDS</a></div>
+            <div style="margin: 23px 15px;"><a class="link" href="#" ">GIFT CARDS</a></div>
         </div>
         <div style="display: flex; justify-content: space-between;">
-            <div style="margin-top: 23px;"><img
+            <div class = "locate" style="margin-top: 23px;"><img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVVJREFUSEu1lTFOAzEQRV9KOAWcgRoBDS0cgRwEAeIgwA2gpQFEnTMkp4AS8tEMGu2OvV6ELUW7Wnvm/e+xJws6j0Xn/MwFfJmg5rjmhZa4C2APuACOgGMDbYAH4H47p/fimHJwDVxV4h2kdemoAV6C4pvt+6v95EhO9HS45k4yQgngyqVwaYmzeEEkRE+JGDnJAFKnIA2pkroD4BI4te/PwC2wMjdan4rJACronRVQ6pX8HdgZWPgEDg2i9YobucgAa7Os5Dolj8BZoYZPwHlwMapFBPgZ91z7ZvsjUe9r5GLXBElYHD+5/wugXEOBI4DT/Xh6gVu2aFi3XydZDfyIav/nFtnrVgXoTPt+zjmmSup1qwI06ZanLlq8M80XTQBvAwJpaLvewo32dvHnVuEQAWrNTutS5b5HU900grq06+EF7vKHEyHdAYWWVP7cUoPZSWPAN2JtWBlfsWTNAAAAAElFTkSuQmCC" />
             </div>
-            <div style="margin: 23px 15px; margin-left: 0px;">Find a Store</div>
-            <button style="margin: 23px 15px; background-color: white; color: black; font-weight: bold; font-size: medium; border: 2px solid; border-radius: 20px;">Sign In</button>
-            <button style="margin: 23px 15px; background-color: black; color: white; font-weight: bold; font-size: medium; border-radius: 20px;">Join Now</button>
+            <div style="margin: 23px 15px; margin-left: 0px;"><a href="#" class="link">Find a Store</a></div>
+            <button id="sign" >Sign In</button>
+            <button id="join">Join Now</button>
         </div>
     </div>
     <div class="banner">STARBUCKS&reg; REWARDS</div>
@@ -143,7 +175,7 @@
                 IS A TAP AWAY</h1>
             <p>Join now to start earning Rewards.</p>
             <div style="padding: 20px;"></div>
-            <button>Join Now</button>
+            <button id="join1" style="">Join Now</button>
             <p>Or <a href="#" style="color: black;">join in the app</a> for the best experience</p>
         </div>
     </div>
