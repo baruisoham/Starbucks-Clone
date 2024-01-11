@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="nav.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Rewards</title>
+    <style>
+        * {
+            /* "*" addresses all the elements in the whole website. */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+        }
+
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+            background-image: url("Starbucks hero.jpg");
+
+            /* Set a specific height */
+            height: 100%;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Place text in the middle of the image */
+        .hero-text {
+            text-align: start;
+            position: absolute;
+            top: 50%;
+            left: 19%;
+
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+
+        .banner {
+            background: #1e3932;
+            font-weight: bold;
+            color: #f1f8f6;
+            padding-left: 7%;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            box-shadow: 0px 5px 5px grey;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            /* border: 1px solid #ccc; */
+            background-color: #f1f1f1;
+
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            border-bottom: 4px solid #f1f8f6;
+        }
+
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            /* background-color: #ccc; */
+            box-sizing: border-box;
+            border-bottom: 4px solid #008248;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            /* display: none; */
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            animation: fadeEffect 1s;
+            /* Fading effect takes 1 second */
+        }
+
+        /* Go from zero to full opacity */
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" style="display: flex; justify-content: space-between; margin-top: 15px; font-weight: bold; margin-left: 8%; margin-right:8%;">
+        <div style="display: flex; justify-content: space-between;">
+            <img src="/starbucks-coffee4647.jpg" alt="" height="75px" width="100px">
+            <div style="margin: 23px 15px;">MENU</div>
+            <div style="margin: 23px 15px; border-bottom: 4px solid #008248;">REWARDS</div>
+            <div style="margin: 23px 15px;">GIFT CARDS</div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <div style="margin-top: 23px;"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVVJREFUSEu1lTFOAzEQRV9KOAWcgRoBDS0cgRwEAeIgwA2gpQFEnTMkp4AS8tEMGu2OvV6ELUW7Wnvm/e+xJws6j0Xn/MwFfJmg5rjmhZa4C2APuACOgGMDbYAH4H47p/fimHJwDVxV4h2kdemoAV6C4pvt+6v95EhO9HS45k4yQgngyqVwaYmzeEEkRE+JGDnJAFKnIA2pkroD4BI4te/PwC2wMjdan4rJACronRVQ6pX8HdgZWPgEDg2i9YobucgAa7Os5Dolj8BZoYZPwHlwMapFBPgZ91z7ZvsjUe9r5GLXBElYHD+5/wugXEOBI4DT/Xh6gVu2aFi3XydZDfyIav/nFtnrVgXoTPt+zjmmSup1qwI06ZanLlq8M80XTQBvAwJpaLvewo32dvHnVuEQAWrNTutS5b5HU900grq06+EF7vKHEyHdAYWWVP7cUoPZSWPAN2JtWBlfsWTNAAAAAElFTkSuQmCC" />
+            </div>
+            <div style="margin: 23px 15px; margin-left: 0px;">Find a Store</div>
+            <button style="margin: 23px 15px; background-color: white; color: black; font-weight: bold; font-size: medium; border: 2px solid; border-radius: 20px;">Sign In</button>
+            <button style="margin: 23px 15px; background-color: black; color: white; font-weight: bold; font-size: medium; border-radius: 20px;">Join Now</button>
+        </div>
+    </div>
+    <div class="banner">STARBUCKS&reg; REWARDS</div>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>FREE COFFEE<br>
+                IS A TAP AWAY</h1>
+            <p>Join now to start earning Rewards.</p>
+            <div style="padding: 20px;"></div>
+            <button>Join Now</button>
+            <p>Or <a href="#" style="color: black;">join in the app</a> for the best experience</p>
+        </div>
+    </div>
+
+
+    <div style="background-color: white;">
+        <div style="margin-top: 115px;">
+            <center>
+                <h1>Getting Started is Easy</h1>
+            </center>
+        </div>
+        <div style="margin: 20px 0px;">
+            <center>Earn Rewards in a few easy steps.</center>
+        </div>
+
+
+        <div style="display: flex; justify-content: center; margin-top: 50px; margin-left: 10%; margin-right: 10%;">
+            <div style="margin: 0% 2%;">
+                <center><img
+                        src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-1@2x.jpg"
+                        alt="" height="48px" width="48px"></center>
+                <div>
+                    <center>
+                        <h3>Create an account</h3>
+                    </center>
+                </div>
+                <div style="padding: 0% 5%;">
+                    <center>To get started, <a href="#" style="color:#008248;">join now</a>. You can also <a href="#"
+                            style="color:#008248;">join in the app</a> to get access to the full range of Starbucks&reg;
+                        Rewards benefits.</center>
+                </div>
+            </div>
+            <div style="margin: 0% 2%;">
+                <center><img
+                        src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-2@2x.jpg"
+                        alt="" height="48px" width="48px"> </center>
+                <div>
+                    <center>
+                        <h3>Order and pay how you'd like</h3>
+                    </center>
+                </div>
+                <div style="padding: 0% 5%;">
+                    <center>Use cash, credit/debit card or save some time and pay right through the app. You’ll collect
+                        Stars all ways. <a href="#" style="color:#008248;">Learn how</a></center>
+                </div>
+
+            </div>
+            <div style="margin: 0% 2%;">
+                <center><img
+                        src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-3@2x.jpg"
+                        alt="" height="48px" width="48px"> </center>
+                <div>
+                    <center>
+                        <h3>Earn Stars, get Rewards</h3>
+                    </center>
+                </div>
+                <div style="padding: 0% 5%;">
+                    <center>As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start
+                        redeeming with as little as 25 Stars!</center>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 140px; background-color:#f1f8f6; padding-top: 30px; padding-bottom: 30px;">
+            <h1>
+                <center>Get your favorites for free</center>
+            </h1>
+        </div>
+
+
+        <!-- Tab links -->
+        <div class="tab"
+            style=" background-color:#f1f8f6; display: flex; justify-content: center; box-shadow: 0px 5px 5px black;">
+            <div>
+                <button id="defaultOpen" class="tablinks" onclick="openCity(event, '25')">
+                    <h1 style="display: inline;">25</h1>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEu1lVFygjAQhv+V3qP2DsWZvuEt8iKFk7SchA59yS30zRntHfQeHU0bICq4C0ElL2FI2C+b/9+FMPKgkeNjEGBbqCUB+9dYp74H8wZsCpUQkJeBCfNwoVc+EG+APT2AqA66CmM9fxhg+60iGFjAeXhm4ZVB6/QO4pVFL2Cdq+lTgF37OgywJ0Lap8UJUAaaICHCswGmNqCdqX7m7ttCKs2b8+8B2Vuq3Vr1qXANPjpe7bHgWaxfani13rDhTWHPHxkgncX6qwF4FOQy+BXAvrBaBAFsxZY6DBqMdVkX3QQR6kK0KVtcUjoGWfiuP7llETBQdLHo5AyavadTiktbtjd2Acy9ArMu6rSrQVZCCR9MdbE6sBn8FCr/TztxQdp9R3AZqwML2BRqd6oDwSGud7lsJB3EDI5A5NMt626bS7/S3nY9SGhm8+iAP/34jRnPEQlhAAAAAElFTkSuQmCC" />
+                </button>
+                <button class="tablinks" onclick="openCity(event, '100')">
+                    <h1 style="display: inline;">100</h1>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEu1lVFygjAQhv+V3qP2DsWZvuEt8iKFk7SchA59yS30zRntHfQeHU0bICq4C0ElL2FI2C+b/9+FMPKgkeNjEGBbqCUB+9dYp74H8wZsCpUQkJeBCfNwoVc+EG+APT2AqA66CmM9fxhg+60iGFjAeXhm4ZVB6/QO4pVFL2Cdq+lTgF37OgywJ0Lap8UJUAaaICHCswGmNqCdqX7m7ttCKs2b8+8B2Vuq3Vr1qXANPjpe7bHgWaxfani13rDhTWHPHxkgncX6qwF4FOQy+BXAvrBaBAFsxZY6DBqMdVkX3QQR6kK0KVtcUjoGWfiuP7llETBQdLHo5AyavadTiktbtjd2Acy9ArMu6rSrQVZCCR9MdbE6sBn8FCr/TztxQdp9R3AZqwML2BRqd6oDwSGud7lsJB3EDI5A5NMt626bS7/S3nY9SGhm8+iAP/34jRnPEQlhAAAAAElFTkSuQmCC" />
+                </button>
+                <button class="tablinks" onclick="openCity(event, '200')">
+                    <h1 style="display: inline;">200</h1>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEu1lVFygjAQhv+V3qP2DsWZvuEt8iKFk7SchA59yS30zRntHfQeHU0bICq4C0ElL2FI2C+b/9+FMPKgkeNjEGBbqCUB+9dYp74H8wZsCpUQkJeBCfNwoVc+EG+APT2AqA66CmM9fxhg+60iGFjAeXhm4ZVB6/QO4pVFL2Cdq+lTgF37OgywJ0Lap8UJUAaaICHCswGmNqCdqX7m7ttCKs2b8+8B2Vuq3Vr1qXANPjpe7bHgWaxfani13rDhTWHPHxkgncX6qwF4FOQy+BXAvrBaBAFsxZY6DBqMdVkX3QQR6kK0KVtcUjoGWfiuP7llETBQdLHo5AyavadTiktbtjd2Acy9ArMu6rSrQVZCCR9MdbE6sBn8FCr/TztxQdp9R3AZqwML2BRqd6oDwSGud7lsJB3EDI5A5NMt626bS7/S3nY9SGhm8+iAP/34jRnPEQlhAAAAAElFTkSuQmCC" />
+                </button>
+                <button class="tablinks" onclick="openCity(event, '300')">
+                    <h1 style="display: inline;">300</h1>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEu1lVFygjAQhv+V3qP2DsWZvuEt8iKFk7SchA59yS30zRntHfQeHU0bICq4C0ElL2FI2C+b/9+FMPKgkeNjEGBbqCUB+9dYp74H8wZsCpUQkJeBCfNwoVc+EG+APT2AqA66CmM9fxhg+60iGFjAeXhm4ZVB6/QO4pVFL2Cdq+lTgF37OgywJ0Lap8UJUAaaICHCswGmNqCdqX7m7ttCKs2b8+8B2Vuq3Vr1qXANPjpe7bHgWaxfani13rDhTWHPHxkgncX6qwF4FOQy+BXAvrBaBAFsxZY6DBqMdVkX3QQR6kK0KVtcUjoGWfiuP7llETBQdLHo5AyavadTiktbtjd2Acy9ArMu6rSrQVZCCR9MdbE6sBn8FCr/TztxQdp9R3AZqwML2BRqd6oDwSGud7lsJB3EDI5A5NMt626bS7/S3nY9SGhm8+iAP/34jRnPEQlhAAAAAElFTkSuQmCC" />
+                </button>
+                <button class="tablinks" onclick="openCity(event, '400')">
+                    <h1 style="display: inline;">400</h1>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU9JREFUSEu1lVFygjAQhv+V3qP2DsWZvuEt8iKFk7SchA59yS30zRntHfQeHU0bICq4C0ElL2FI2C+b/9+FMPKgkeNjEGBbqCUB+9dYp74H8wZsCpUQkJeBCfNwoVc+EG+APT2AqA66CmM9fxhg+60iGFjAeXhm4ZVB6/QO4pVFL2Cdq+lTgF37OgywJ0Lap8UJUAaaICHCswGmNqCdqX7m7ttCKs2b8+8B2Vuq3Vr1qXANPjpe7bHgWaxfani13rDhTWHPHxkgncX6qwF4FOQy+BXAvrBaBAFsxZY6DBqMdVkX3QQR6kK0KVtcUjoGWfiuP7llETBQdLHo5AyavadTiktbtjd2Acy9ArMu6rSrQVZCCR9MdbE6sBn8FCr/TztxQdp9R3AZqwML2BRqd6oDwSGud7lsJB3EDI5A5NMt626bS7/S3nY9SGhm8+iAP/34jRnPEQlhAAAAAElFTkSuQmCC" />
+                </button>
+            </div>
+        </div>
+
+        <!-- Tab content -->
+        <div style="background-color: #d4e9e2;">
+            <div id="25" class="tabcontent">
+                <center>
+                    <table>
+                        <tr>
+                            <td><img src="25.webp" alt="" height="211" width="375"></td>
+                            <td>
+                                <h2>Customize your drink</h2>
+                                <p>Make your drink just right with an extra espresso shot, nondairy milk or a dash of
+                                    your favorite syrup</p>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+
+            <div id="100" class="tabcontent">
+                <center>
+                    <table>
+                        <tr>
+                            <td><img src="100.webp" alt="" height="211" width="375"></td>
+                            <td>
+                                <h2>Brewed hot or iced coffee or tea, bakery item, packaged snack, and more</h2>
+                                <p>Treat yourself to an iced coffee, buttery croissant, bag of chips, and more.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+
+            <div id="200" class="tabcontent">
+                <center>
+                    <table>
+                        <tr>
+                            <td><img src="200.webp" alt="" height="211" width="375"></td>
+                            <td>
+                                <h2>Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h2>
+                                <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast
+                                    sandwich or oatmeal on us.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+
+            <div id="300" class="tabcontent">
+                <center>
+                    <table>
+                        <tr>
+                            <td><img src="300.webp" alt="" height="211" width="375"></td>
+                            <td>
+                                <h2>Sandwich, protein box or at-home coffee</h2>
+                                <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including
+                                    Starbucks VIA Instant®.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+
+            <div id="400" class="tabcontent">
+                <center>
+                    <table>
+                        <tr>
+                            <td><img src="400.webp" alt="" height="211" width="375"></td>
+                            <td>
+                                <h2>Select Starbucks&reg; merchandise</h2>
+                                <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+
+
+            <script>
+                // Get the element with id="defaultOpen" and click on it. This is to make sure that whenever the page loads, the first one is automatically clicked on by default.
+                document.getElementById("defaultOpen").click();
+            </script>
+        </div>
+
+        <div style="background-color: white; margin-bottom: 70px;">
+            <div style="margin-top: 115px;">
+                <center>
+                    <h1>Endless Extras</h1>
+                </center>
+            </div>
+            <div style="margin: 20px 20%;">
+                <center>Joining Starbucks&reg; means unlocking access to exclusive benefits. Say hello to easy ordering,
+                    tasty Rewards and-yes, free coffee.</center>
+            </div>
+
+
+            <div style="display: flex; justify-content: center; margin-top: 50px; margin-left: 10%; margin-right: 10%;">
+                <div style="margin: 0% 2%;">
+                    <center><img src="https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg" alt=""
+                            height="112px" width="112px"></center>
+                    <div>
+                        <center>
+                            <h3>Fun freebies</h3>
+                        </center>
+                    </div>
+                    <div style="padding: 0% 5%;">
+                        <center>Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea
+                            refills.
+                            <br>
+                            <a href="#" style="color: #008248;">Learn more</a>
+                        </center>
+                    </div>
+                </div>
+                <div style="margin: 0% 2%;">
+                    <center><img src="https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg"
+                            alt="" height="112px" width="112px"> </center>
+                    <div>
+                        <center>
+                            <h3>Order & pay ahead</h3>
+                        </center>
+                    </div>
+                    <div style="padding: 0% 5%;">
+                        <center>Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.
+                            <br>
+                            <a href="#" style="color: #008248;">Learn more</a>
+                        </center>
+                    </div>
+
+                </div>
+                <div style="margin: 0% 2%;">
+                    <center><img src="https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg"
+                            alt="" height="112px" width="112px"> </center>
+                    <div>
+                        <center>
+                            <h3>Get to free faster</h3>
+                        </center>
+                    </div>
+                    <div style="padding: 0% 5%;">
+                        <center>Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.
+                            <br>
+                            <a href="#" style="color: #008248;">Learn more</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #f2f0eb;">
+            <div style="padding-top: 45px;">
+                <center>
+                    <h1>Cash or card, you earn Stars</h1>
+                </center>
+            </div>
+            <div style="padding-bottom: 40px;" >
+                <center>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to
+                    (really delicious) Rewards.</center>
+            </div>
+            
+                <!-- <div style="display: flex; justify-content:center; padding: 0 10%;">
+                    <div>
+                        <h2>1<img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUBJREFUSEu1le1xwyAMhhF3cGzRdBNnk3iS1pMkmySb1GNwcIZWDvRwjAy0tv7442w9Eu+LAHZwwMH5WRNACHEHgNEY09cWVg0QQlwA4IqJOednrfWjBtICwOo7TOq9f1hrz7sBlFKdc+6eJqztoqqDsPZz9TFquygClFIn59xXZjlGznlf0uIXEBJdGGNv3vsTJgQAvM73RIxBk/mKDgsmGLTWz3fxx9wy1IhIgY0x7wuAlPLzxyAf/0ia6tNba28LAD7sAXl110rkdEM1dpMVPeuiP0BIR5E2lVLiWEBXFWNr05GARlcNxhg0ySq2OvDF0sMHW7t6Nw2i71+LagUMIcFqv1A6ZAEZgRcuCWMFp2s6Rm65g4gC4HCLP2cFTGZX7AZPunk8pLHVQVczLRE0TdOVOkqL47rWSdR3hwO+AVkCnxkWpNmWAAAAAElFTkSuQmCC"
+                            height="15px" width="15px"> per dollar</h2>
+                            <p>Pay as you go</p>
+                    
+
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: flex-start;">
+                            <div><img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png" alt=""
+                                    height="158" width="112"></div>
+                            <div style="margin-left: 10px;">
+                                <h3>Scan and pay seperately</h3>
+                                <p>Use cash or credit/debit card at the register.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: flex-start;">
+                            <div><img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" alt=""
+                                    height="158" width="112"></div>
+                            <div style="margin-left: 10px;">
+                                <h3>Save payment in the app</h3>
+                                <p>Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able
+                                    to order ahead or scan and pay at the register in one step.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content:center; padding: 0 10%;">
+                    <div>
+                        <h2>2<img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUBJREFUSEu1le1xwyAMhhF3cGzRdBNnk3iS1pMkmySb1GNwcIZWDvRwjAy0tv7442w9Eu+LAHZwwMH5WRNACHEHgNEY09cWVg0QQlwA4IqJOednrfWjBtICwOo7TOq9f1hrz7sBlFKdc+6eJqztoqqDsPZz9TFquygClFIn59xXZjlGznlf0uIXEBJdGGNv3vsTJgQAvM73RIxBk/mKDgsmGLTWz3fxx9wy1IhIgY0x7wuAlPLzxyAf/0ia6tNba28LAD7sAXl110rkdEM1dpMVPeuiP0BIR5E2lVLiWEBXFWNr05GARlcNxhg0ySq2OvDF0sMHW7t6Nw2i71+LagUMIcFqv1A6ZAEZgRcuCWMFp2s6Rm65g4gC4HCLP2cFTGZX7AZPunk8pLHVQVczLRE0TdOVOkqL47rWSdR3hwO+AVkCnxkWpNmWAAAAAElFTkSuQmCC"
+                            height="15px" width="15px"> per dollar</h2>
+                            <p>Add funds in the app</p>
+                    
+
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: flex-start;">
+                            <div><img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2A.png" alt=""
+                                    height="158" width="112"></div>
+                            <div style="margin-left: 10px;">
+                                <h3>Preload</h3>
+                                <p>To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; justify-content: flex-start;">
+                            <div><img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2B.png" alt=""
+                                    height="158" width="112"></div>
+                            <div style="margin-left: 10px;">
+                                <h3>
+                                    Register your gift card</h3>
+                                <p>Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 -->
+          
+                 
+
+                 <center>
+                    <table style="margin: 20px; width: 80%; text-align: left; border-collapse: collapse;">
+                        <tr>
+                            <td style="text-align: left; padding: ;">
+                                <h2 style="display: inline;">1<img style="display: inline;"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUBJREFUSEu1le1xwyAMhhF3cGzRdBNnk3iS1pMkmySb1GNwcIZWDvRwjAy0tv7442w9Eu+LAHZwwMH5WRNACHEHgNEY09cWVg0QQlwA4IqJOednrfWjBtICwOo7TOq9f1hrz7sBlFKdc+6eJqztoqqDsPZz9TFquygClFIn59xXZjlGznlf0uIXEBJdGGNv3vsTJgQAvM73RIxBk/mKDgsmGLTWz3fxx9wy1IhIgY0x7wuAlPLzxyAf/0ia6tNba28LAD7sAXl110rkdEM1dpMVPeuiP0BIR5E2lVLiWEBXFWNr05GARlcNxhg0ySq2OvDF0sMHW7t6Nw2i71+LagUMIcFqv1A6ZAEZgRcuCWMFp2s6Rm65g4gC4HCLP2cFTGZX7AZPunk8pLHVQVczLRE0TdOVOkqL47rWSdR3hwO+AVkCnxkWpNmWAAAAAElFTkSuQmCC"
+                                        height="15px" width="15px"> per dollar
+                                </h2>
+                                <p>Pay as you go</p>
+                            </td>
+                            <td style="text-align: left; padding: ;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png" alt="" height="158"
+                                            width="112">  
+                                        </td>
+                                        <td>
+                                            <h3>Scan and pay separately</h3>
+                                            <p>Use cash or credit/debit card at the register.</p> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="text-align: left; padding:;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" alt="" height="158"
+                                            width="112">   
+                                        </td>
+                                        <td>
+                                            <h3>Save payment in the app</h3>
+                                            <p>Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead
+                                                or scan and pay at the register in one step.</p>   
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; padding: ;">
+                                <h2>2<img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUBJREFUSEu1le1xwyAMhhF3cGzRdBNnk3iS1pMkmySb1GNwcIZWDvRwjAy0tv7442w9Eu+LAHZwwMH5WRNACHEHgNEY09cWVg0QQlwA4IqJOednrfWjBtICwOo7TOq9f1hrz7sBlFKdc+6eJqztoqqDsPZz9TFquygClFIn59xXZjlGznlf0uIXEBJdGGNv3vsTJgQAvM73RIxBk/mKDgsmGLTWz3fxx9wy1IhIgY0x7wuAlPLzxyAf/0ia6tNba28LAD7sAXl110rkdEM1dpMVPeuiP0BIR5E2lVLiWEBXFWNr05GARlcNxhg0ySq2OvDF0sMHW7t6Nw2i71+LagUMIcFqv1A6ZAEZgRcuCWMFp2s6Rm65g4gC4HCLP2cFTGZX7AZPunk8pLHVQVczLRE0TdOVOkqL47rWSdR3hwO+AVkCnxkWpNmWAAAAAElFTkSuQmCC"
+                                        height="15px" width="15px"> per dollar
+                                </h2>
+                                <p>Add funds in the app</p>
+                            </td>
+                            <td style="text-align: left; padding: ;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2A.png" alt="" height="158"
+                                            width="112"> 
+                                        </td>
+                                        <td>
+                                            <h3>Preload</h3>
+                                            <p>To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="text-align: left; padding: ;">
+                                
+                                        
+                                            <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2B.png" alt="" height="158"
+                                            width="112" style="float: left; margin-right: 10px;">  
+                                            <div><h3>Register your gift card</h3>
+                                                <p>Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p> </div>
+                                            
+                                        
+                                    
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                
+
+
+        </div>
+
+
+
+
+</body>
+
+</html>
+<br>
